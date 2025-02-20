@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghicește Numărul</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Joc: Ghicește Numărul!</h1>
+    <p>Introdu un număr între 1 și 10:</p>
+    <input type="number" id="numar" min="1" max="10">
+    <button onclick="verificaNumar()">Verifică</button>
+    <p id="mesaj"></p>
+
+    <script>
+        let numarCorect = Math.floor(Math.random() * 10) + 1;
+
+        function verificaNumar() {
+            let numarIntrodus = parseInt(document.getElementById("numar").value);
+            let mesaj = document.getElementById("mesaj");
+
+            if (numarIntrodus === numarCorect) {
+                mesaj.innerText = "🎉 Felicitări! Ai ghicit numărul!";
+                mesaj.style.color = "green";
+            } else {
+                mesaj.innerText = "❌ Greșit! Încearcă din nou!";
+                mesaj.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

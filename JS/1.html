@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Functii</h1>
+<img src="https://www.google.com/imgres?q=caine&imgurl=https%3A%2F%2Fwww.zooplus.ro%2Fghid%2Fwp-content%2Fuploads%2F2021%2F07%2Fcaine-beagle.webp&imgrefurl=https%3A%2F%2Fwww.zooplus.ro%2Fghid%2Fcaini%2Frase-de-caini%2Fbeagle&docid=y6P7Z3Fx3FWc4M&tbnid=20BgUU4ELDnYLM&vet=12ahUKEwjH453T18qLAxVF1QIHHXFACngQM3oECBwQAA..i&w=1732&h=1154&hcb=2&ved=2ahUKEwjH453T18qLAxVF1QIHHXFACngQM3oECBwQAA"
+width="270px" height="250px"
+id="imagine"/>
+<p id="paragraf">paragraf</p>
+<button onclick="paragraf()">click</button>
+<p id="paragraf" class="clasa()">clasa</p>
+<button onclick="clasa()">click</button>
+  <script>
+// function suma(a,b)
+// {
+//    return a+b;
+// }
+// const suma2=function(a,b)
+// {
+//    return a+b;
+// }
+// const suma3=function(a,b)
+// {
+//    return a+b;
+// }
+// console.log(suma(45,9));
+// function suma(a,b)
+// {
+//    console.log(a+b);
+// }
+// suma(4,3);
+// const suma=(a,b)=>a+b;
+// const diferenta=(a,b)=>a-b;
+// onst produs=(a,b)=>a*b;
+// const impartire=(a,b)=>a/b;
+function buton()
+{
+    const img=document.getElementById("imagine");
+    img.src="https://www.google.com/imgres?q=pesti&imgurl=https%3A%2F%2Fwww.novafood.ro%2Fwp-content%2Fuploads%2F2017%2F04%2Fdespre-pesti.jpg&imgrefurl=https%3A%2F%2Fwww.novafood.ro%2Ftot-ce-trebuie-sa-stii-despre-pesti%2F&docid=TMPNSZMzrcq-cM&tbnid=zuscMiX5vOFKwM&vet=12ahUKEwiKnKen2MqLAxU1zwIHHRQaExgQM3oECBcQAA..i&w=1920&h=1191&hcb=2&ved=2ahUKEwiKnKen2MqLAxU1zwIHHRQaExgQM3oECBcQAA";
+}
+function paragraf()
+{
+    const paragraf=document.getElementById("paragraf");
+    paragraf.style.coloer="red";
+}
+function clasa()
+{
+    const paragraf=document.getElementById("paragraf");
+    paragraf.classList.toggle("fontaltceva");
+}
+</script>
+</body>
+</html>
