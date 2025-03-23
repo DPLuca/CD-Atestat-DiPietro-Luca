@@ -1,93 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-                    margin: 0;
-                }
-                nav{
-                    border: 10px solid #3E7B27;
-                    background-color:#3E7B27;
-                    color: white;
-                    padding: 6px;
-                    margin: 2px 2px;
-                    text-align: center;
-                    height: 52px;
-                    display: flex;
-                    align-items: center;
-                    gap: 100px;
-                    justify-content:center;
-                    font-size: 28px
-                }
-        
-                nav a{
-                    color: white;
-                    text-decoration: none;
-                }
-                body
-                {
-                    background-color: #f8f1e4;
-                }
-                .inaltimenav
-        {
-            width: 1678px;
-            height: 27px;
-            border-radius: 98px;
-        }
-        .inaltime
-        {
-            width: 950px;
-            height: 25px;
-            border-radius: 98px;
-        }
-        form
-        {
-            justify-content: center;
-            margin-top: 300px;
-            margin-left: 550px;
-        }
-        .Navbar_Link a:hover{
-            color: #be1717;
-            text-decoration: none;
-        }
-        .patrat {
-        height: 370px;
-        width: 370px;
-        background-color: lightgreen;
-        border: 5px solid darkgreen;
-        border-radius: 20px;
-      }
-            </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Formular</title>
+  <style>
+  *{
+    margin: 0;
+}
+nav{
+    border: 10px solid #3E7B27;
+    background-color:#3E7B27;
+    color: white;
+    padding: 6px;
+    margin: 2,50px 2,50px;
+    text-align: center;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content:center;
+    font-size: 28px
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+body {
+    background-color: #f8f1e4;
+  }
+.inaltimenav
+{
+width: 1678px;
+height: 27px;
+border-radius: 98px;
+}
+.inaltime
+{
+width: 950px;
+height: 25px;
+border-radius: 98px;
+}
+    .formular-contact {
+      max-width: 500px;
+      background-color: #fff;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .formular-contact h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #3E7B27;
+    }
+    .grup-formular {
+      margin-bottom: 15px;
+    }
+    .grup-formular label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .grup-formular input,
+    .grup-formular textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .grup-formular textarea {
+      height: 120px;
+    }
+    .formular-contact button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3E7B27;
+      color: white;
+      font-size: 18px;
+    }
+    .formular-contact button:hover {
+      background-color: #2e5d1f;
+    }
+  </style>
 </head>
 <body>
-    <nav class="inaltimenav"> 
-        <a href="Atestat.html">Acasa</a>
-        <a href="Aboutus.html">Despre noi</a>
-        <a href="locatie.html">Locatie</a>
-        <a>Contact</a>
-        <a href="Produse.html">Produse</a>
-</nav>
-<form name="submit-to-google-sheet">
-    <input name="nume" type="nume" placeholder="nume" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <input name="mesaj" type="mesaj" placeholder="mesaj" required>
-    <button type="submit">Send</button>
+  <nav class="inaltimenav">
+    <a href="Atestat.html">Acasa</a>
+    <a href="Aboutus.html">Despre noi</a>
+    <a href="locatie.html">Locatie</a>
+    <a>Contact</a>
+    <a href="Produse.html">Produse</a>
+  </nav>
+
+  <form class="formular-contact" name="formular-contact-sheet">
+    <h2>Contactează-ne</h2>
+    <div class="grup-formular">
+      <label for="numeUtilizator">Nume</label>
+      <input id="numeUtilizator" name="nume" type="text" placeholder="Nume" required>
+    </div>
+    <div class="grup-formular">
+      <label for="emailUtilizator">Email</label>
+      <input id="emailUtilizator" name="email" type="email" placeholder="Email" required>
+    </div>
+    <div class="grup-formular">
+      <label for="mesaj">Mesaj</label>
+      <textarea id="mesaj" name="mesaj" placeholder="Scrie mesajul aici" required></textarea>
+    </div>
+    <button type="submit">Trimite</button>
   </form>
-  <div class="patart">
-  </div>
+
   <script>
-    const scriptURL =' https://script.google.com/macros/s/AKfycbw_vj_TSQgTPA0sCT_DUC3ARtyTtJBT7KVZDBYDQ5tv0ycZwOf5cZETHynvrDjM5Zw1Dg/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_vj_TSQgTPA0sCT_DUC3ARtyTtJBT7KVZDBYDQ5tv0ycZwOf5cZETHynvrDjM5Zw1Dg/exec';
+    const form = document.forms['formular-contact-sheet'];
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      console.log('Success!', response);
+      form.reset();
     })
+    .catch(error => console.error('Error!', error.message));
+});
   </script>
 </body>
 </html>
