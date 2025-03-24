@@ -27,10 +27,6 @@
                     color: white;
                     text-decoration: none;
                 }
-                body
-                {
-                    background-color: #f8f1e4;
-                }
                 .inaltimenav
         {
             width: 1678px;
@@ -47,7 +43,104 @@
             color: #be1717;
             text-decoration: none;
         }
-            </style>
+        .sidebar {
+    width: 260px;
+    background: #3E7B27;
+    padding: 15px;
+    height: 100%;
+    position: fixed;
+    top: 62px;
+    left: 0;
+    color: white;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    font-size:33px;
+}
+
+.sidebar ul li:hover {
+    background: #be1717;
+}
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.pret{
+    font-weight: bold;
+    color: #e60000;
+    margin: 5px 0;
+}
+
+.cantitate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.cantitate button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cantitate input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+</style>
 </head>
 <body>
     <nav class="inaltimenav"> 
@@ -57,6 +150,68 @@
         <a href="locatie.html">Locatie</a>
         <a href="Contact.html">Contact</a>
         <a>Produse</a>
-</nav>
+    </nav>
+        <div class="sidebar">
+            <ul>
+                <li>Bauturi</li>
+                <li>Branzeturi</li>
+                <li>Cafea</li>
+                <li>Dulciuri</li>
+                <li>Mezeluri</li>
+                <li>Paste</li>
+                <li>Pizza</li>
+                <li>Sosuri</li>
+            </ul>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="barilla.jpg" alt="Paste Barilla Ditalini Rigati">
+                <h3>Paste Barilla 47 Ditalini Rigati 500g</h3>
+                <p class="price">8,50 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+    
+            <div class="product-card">
+                <img src="valfrutta.jpg" alt="Conservă Fasole Borlotti">
+                <h3>CONSERVĂ FASOLE VALFRUTTA BORLOTTI 400G</h3>
+                <p class="price">6,90 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+        </div>
+            <script>
+                document.querySelectorAll('.minus').forEach(button => {
+                    button.addEventListener('click', () => {
+                        let input = button.nextElementSibling;
+                        if (input.value > 1) {
+                            input.value = parseInt(input.value) - 1;
+                        }
+                    });
+                });
+            
+                document.querySelectorAll('.plus').forEach(button => {
+                    button.addEventListener('click', () => {
+                        let input = button.previousElementSibling;
+                        input.value = parseInt(input.value) + 1;
+                    });
+                });
+            
+                document.querySelectorAll('.add-to-cart').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        let quantity = e.target.closest('.product-card').querySelector('input').value;
+                        let productName = e.target.closest('.product-card').querySelector('h3').innerText;
+                        alert(`Adăugat ${quantity} din ${productName} în coș.`);
+                    });
+                });
+            </script>
 </body>
 </html>
