@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina produs1</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        nav {
+      border: 10px solid #3e7b27;
+      background-color: #3e7b27;
+      color: white;
+      padding: 6px;
+      margin: 2px 2px;
+      text-align: center;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .inaltimenav {
+      width: 1678, 5px;
+      height: 27px;
+      border-radius: 98px;
+    }
+
+    .inaltime {
+      width: 950px;
+      height: 25px;
+      border-radius: 98px;
+    }
+
+    .Navbar_Link a:hover {
+      color: #be1717;
+      text-decoration: none;
+    }
+        body {
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            height: 600px;
+        }
+        .produs {
+            display: flex;
+            gap: 30px;
+        }
+        .produs img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+        }
+        .informatie-produs {
+            flex: 1;
+        }
+        .informatie-produs h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        .pret {
+            font-size: 26px;
+            color: red;
+            margin: 15px 0;
+        }
+        .descriere {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .cantitate {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .cantitate input {
+            width: 60px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .adauga-in-cos {
+            background: green;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+        .adauga-in-cos:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <nav class="inaltimenav Navbar_Link">
+        <input class="inaltime" type="text" placeholder="Search.." />
+        <a href="/Atestat.html">Acasa</a>
+        <a href="/Aboutus.html">DespreNoi</a>
+        <a href="/locatie.html">Locatie</a>
+        <a href="/Contact.html">Contact</a>
+        <a href="/Produse.html">Produse</a>
+    </nav>
+    <div class="container">
+        <div class="produs">
+            <img src="https://www.supermercato.ro/image/cache/catalog/02.%20Pufuleti%20Fonzies%20Gli%20Originali%20100g-500x500.jpg" alt="Fonzie Gli Originali">
+            <div class="informatie-produs">
+                <h1>Pufuleti Fonzies Gli Originali 100g</h1>
+                <p class="pret">10,90 RON / buc</p>
+                <p class="descriere">
+                    Pufuleti italieni crocanți, din porumb cu brânză FONZIES GLI ORIGINALI.
+                    Nu le poți rezista când te lovește pofta de un snack italian! Descoperă plăcerea unică
+                    italiană într-o pungă de pufuleți crocanți.
+                </p>
+                <div class="cantitate">
+                    <button onclick="scadeCantitate()">-</button>
+                    <input type="number" id="cantitate" value="1" min="1">
+                    <button onclick="cresteCantitate()">+</button>
+                </div>
+                <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
+        }
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -5,33 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-                    margin: 0;
-                }
-                nav{
-                    border: 10px solid #3E7B27;
-                    background-color:#3E7B27;
-                    color: white;
-                    padding: 6px;
-                    margin: 2px 2px;
-                    text-align: center;
-                    height: 52px;
-                    display: flex;
-                    align-items: center;
-                    gap: 100px;
-                    justify-content:center;
-                    font-size: 28px
-                }
-        
-                nav a{
-                    color: white;
-                    text-decoration: none;
-                }
-                .inaltimenav
-        {
-            width: 1678px;
-            height: 27px;
-            border-radius: 98px;
+       *{
+            margin: 0;
+        }
+        nav{
+            border: 10px solid #3E7B27;
+            background-color:#3E7B27;
+            color: white;
+            padding: 6px;
+            margin: 2px 2px;
+            text-align: center;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content:center;
+            font-size: 28px
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
         }
         .inaltime
         {
@@ -39,12 +32,17 @@
             height: 25px;
             border-radius: 98px;
         }
+        .inaltimenav
+        {
+            width: 1678px;
+            height: 27px;
+            border-radius: 98px;
+        }
         .Navbar_Link a:hover{
             color: #be1717;
-            text-decoration: none;
         }
         .sidebar {
-    width: 260px;
+    width: 324px;
     background: #3E7B27;
     padding: 15px;
     height: 100%;
@@ -69,6 +67,27 @@
     cursor: pointer;
     font-size:33px;
 }
+.product-container {
+    margin-left: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 260px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+img
+{
+    height:160px;
+    width: 160px;
+}
         </style>
 </head>
 <body>
@@ -80,5 +99,215 @@
         <a href="Contact.html">Contact</a>
         <a>Produse</a>
     </nav>   
+    <div class="sidebar">
+        <ul>
+            <li><a href="bauturi.html">Băuturi</a></li>
+            <li><a href="branzeturi.html">Brânzeturi</a></li>
+            <li><a href="cafea.html">Cafea</a></li>
+            <li><a href="dulciuri.html">Dulciuri</a></li>
+            <li><a href="paste.html">Paste</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="sosuri.html">Sosuri</a></li>
+        </ul>
+    </div>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="poze/pizzadiav.png" alt="Pizza Diavola Edenia">
+            <h3>Pizza Diavola Edenia</h3>
+            <p class="price">22 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizzaHawaii.webp" alt="Pizza pizzaHawaiiana">
+            <h3>Pizza Guseppe Hawaii Dr. Oetker cu sunca si ananas</h3>
+            <p class="price">20 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/PizzaMozzarella.jpg" alt="Pizza Verace">
+            <h3>Pizza Verace Mozzarella Di Bufala</h3>
+            <p class="price">22 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/PizzaSalam.jpg" alt="Pizza Salami">
+            <h3>Pizza Guseppe Salami</h3>
+            <p class="price">18 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizzaprosciutto.jpg" alt="Pizza Prosciutto">
+            <h3>Pizza Ristorante Prosciutto,Dr. Oetker</h3>
+            <p class="price">18 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/PizzaPancetasifungi.jpg" alt="pizza pancetta e funghi">
+            <h3>Pizza Verace Pancetta & Funghi</h3>
+            <p class="price">24 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizzafunghietartufi.webp" alt="Pizza Funghi & Tartufi ">
+            <h3>Pizza Funghi & Tartufi</h3>
+            <p class="price">24 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizzacusunca.webp" alt="Pizza cu sunca">
+            <h3>Pizza cu șuncă Ham-Mania</h3>
+            <p class="price">20 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizzacalabria.webp" alt="Pizza ‘Nduja Salsicce">
+            <h3>Pizza ‘Nduja Salsicce</h3>
+            <p class="price">22 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/feliciana.webp" alt="Pizza Feliciana salam & chorizo">
+            <h3>Pizza Feliciana salam & chorizo</h3>
+            <p class="price">20 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/prosciuttoefunghi.webp" alt="Pizza prosciutto funghi">
+            <h3>Pizza prosciutto funghi</h3>
+            <p class="price">17 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/PizzaSalam2.jpg" alt="Pizza Ristorante fără gluten cu salam">
+            <h3>Pizza Ristorante fără gluten cu salam</h3>
+            <p class="price">18 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizza-hatz-pepperoni-490-g.webp" alt="Pizza congelata Hatz Pepperoni Obsession">
+            <h3>Pizza congelata Hatz Pepperoni Obsession</h3>
+            <p class="price">15 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/minipizza.webp" alt="Mini pizza cu sunca si branza Dr. Oetker Pizzinis, 3 bucati">
+            <h3>Mini pizza cu sunca si branza Dr. Oetker Pizzinis, 3 bucati</h3>
+            <p class="price">10 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/4branza.webp" alt="Pizza Guseppe Dr.Oetker 4 tipuri de branza">
+            <h3>Pizza Guseppe Dr.Oetker 4 tipuri de branza</h3>
+            <p class="price">15 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <img src="poze/pizzaust.png" alt="Pizza Guseppe Dr. Oetker cu sunca si usturoi">
+            <h3>Pizza Guseppe Dr. Oetker cu sunca si usturoi</h3>
+            <p class="price">18 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product-card").forEach(card => {
+        let minusButton = card.querySelector(".quantity button:first-child");
+        let plusButton = card.querySelector(".quantity button:last-child");
+        let quantityInput = card.querySelector(".quantity input");
+
+        minusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        plusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentValue + 1;
+        });
+    });
+});
+        </script>
 </body>
 </html>
