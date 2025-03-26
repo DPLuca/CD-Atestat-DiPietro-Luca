@@ -9,29 +9,22 @@
                     margin: 0;
                 }
                 nav{
-                    border: 10px solid #3E7B27;
-                    background-color:#3E7B27;
-                    color: white;
-                    padding: 6px;
-                    margin: 2px 2px;
-                    text-align: center;
-                    height: 52px;
-                    display: flex;
-                    align-items: center;
-                    gap: 100px;
-                    justify-content:center;
-                    font-size: 28px
-                }
-        
-                nav a{
-                    color: white;
-                    text-decoration: none;
-                }
-                .inaltimenav
-        {
-            width: 1678px;
-            height: 27px;
-            border-radius: 98px;
+            border: 10px solid #3E7B27;
+            background-color:#3E7B27;
+            color: white;
+            padding: 6px;
+            margin: 2px 2px;
+            text-align: center;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content:center;
+            font-size: 28px
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
         }
         .inaltime
         {
@@ -39,9 +32,14 @@
             height: 25px;
             border-radius: 98px;
         }
+        .inaltimenav
+        {
+            width: 1678px;
+            height: 27px;
+            border-radius: 98px;
+        }
         .Navbar_Link a:hover{
             color: #be1717;
-            text-decoration: none;
         }
         .sidebar {
     width: 324px;
@@ -53,6 +51,7 @@
     left: 0;
     color: white;
 }
+
 .sidebar h3 {
     margin-top: 0;
 }
@@ -68,6 +67,27 @@
     cursor: pointer;
     font-size:33px;
 }
+.product-container {
+    margin-left: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 260px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+img
+{
+    height:160px;
+    width: 160px;
+}
         </style>
 </head>
 <body>
@@ -79,5 +99,140 @@
         <a href="Contact.html">Contact</a>
         <a>Produse</a>
     </nav>  
+    <div class="sidebar">
+        <ul>
+            <li><a href="bauturi.html">Băuturi</a></li>
+            <li><a href="dulciuri.html">Dulciuri</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="sosuri.html">Sosuri</a></li>
+        </ul>
+    </div>
+    <div class="product-container">
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs21.html">
+                <img src="/poze/jeleuri.webp" alt="JELEURI BONELLE">
+                <h3>JELEURI BONELLE 175G</h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs22.html">
+                <img src="/poze/mini nutela.webp" alt="Crema Ciocolata Nutella 15g ">
+                <h3>Crema Ciocolata Nutella 15g</h3>
+            </a>
+            <p class="price">2 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs23.html">
+                <img src="poze/crema.webp" alt="CREMA CIOCOLATA PAN DI STELLE">
+                <h3>CREMA CIOCOLATA PAN DI STELLE 380g</h3>
+            </a>
+            <p class="price">20 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs24.html">
+                <img src="poze/brios.webp" alt="PRAJITURA KINDER 10 BRIOSS CU LAPTE 270G">
+                <h3>PRAJITURA KINDER 10 BRIOSS CU LAPTE 270G</h3>
+            </a>
+            <p class="price">18 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs25.html">
+                <img src="poze/nutela.jpg" alt="Nutella,Crema de Alune de Padure cu Cacao, 700g">
+                <h3>Nutella,Crema de Alune de Padure cu Cacao, 700g</h3>
+            </a>
+            <p class="price">27 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs26.html">
+                <img src="poze/bomboane2.webp" alt="BOMBOANE BACI PERUGINA LATTE 37.5G">
+                <h3>BOMBOANE BACI PERUGINA LATTE 37.5G</h3>
+            </a>
+            <p class="price">10 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs27.html">
+                <img src="poze/caramele.webp" alt="CARAMELE SPERLARI LAVAZZA CAFE">
+                <h3>CARAMELE SPERLARI LAVAZZA CAFE 175G </h3>
+            </a>
+            <p class="price">10 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs28.html">
+                <img src="poze/ciocolata.webp" alt="CIOCOLATA NOVI FONDENTE">
+                <h3>CIOCOLATA NOVI FONDENTE 100G </h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+    </div>    
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product-card").forEach(card => {
+        let minusButton = card.querySelector(".quantity button:first-child");
+        let plusButton = card.querySelector(".quantity button:last-child");
+        let quantityInput = card.querySelector(".quantity input");
+
+        minusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        plusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentValue + 1;
+        });
+    });
+});
+        </script>
 </body>
 </html>

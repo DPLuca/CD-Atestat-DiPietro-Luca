@@ -69,6 +69,27 @@
     cursor: pointer;
     font-size:33px;
 }
+.product-container {
+    margin-left: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 260px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+img
+{
+    height:160px;
+    width: 160px;
+}
         </style>
 </head>
 <body>
@@ -82,9 +103,138 @@
     </nav>   
     <div class="sidebar">
         <ul>
-            <li><a href="bauturialcolice.html">Băuturi alcolice</a></li>
-            <li><a href="bauturicarbogazoase.html">Băuturi carbogazoase</a></li>
+            <li><a href="bauturi.html">Băuturi</a></li>
+            <li><a href="dulciuri.html">Dulciuri</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="sosuri.html">Sosuri</a></li>
         </ul>
     </div>
+    <div class="product-container">
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs13.html">
+                <img src="poze/apa.webp" alt="APA ACQUA PANNA STICLA">
+                <h3>APA ACQUA PANNA STICLA 750ML</h3>
+            </a>
+            <p class="price">4 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs14.html">
+                <img src="poze/peroni.webp" alt="BERE PERONI ">
+                <h3>BERE PERONI </h3>
+            </a>
+            <p class="price">5 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs15.html">
+                <img src="poze/moreti.webp" alt="BERE MORETTI">
+                <h3>BERE MORETTI 3x33CL</h3>
+            </a>
+            <p class="price">15 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs16.html">
+                <img src="poze/more.webp" alt="BERE MORETTI ZERO">
+                <h3>BERE MORETTI ZERO 3x33 CL</h3>
+            </a>
+            <p class="price">17 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs17.html">
+                <img src="poze/vin.webp" alt="Vin Spumant Asti Cinzano">
+                <h3>Vin Spumant Asti Cinzano 750ml</h3>
+            </a>
+            <p class="price">35 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs18.html">
+                <img src="poze/ceai.webp" alt="CEAI ESTATHE LIMONE">
+                <h3>CEAI ESTATHE LIMONE 200ML</h3>
+            </a>
+            <p class="price">24 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs19.html">
+                <img src="poze/suc.webp" alt="SUC SAN BENEDETTO ZERO ARANCIA ROSSA">
+                <h3>SUC SAN BENEDETTO ZERO ARANCIA ROSSA 900ML</h3>
+            </a>
+            <p class="price">10 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs20.html">
+                <img src="poze/ceai2.webp" alt="CEAI SOLUBIL BONOMELLI CON MIELE E ARANCIA">
+                <h3>CEAI SOLUBIL BONOMELLI CON MIELE E ARANCIA </h3>
+            </a>
+            <p class="price">12 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+    </div>    
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product-card").forEach(card => {
+        let minusButton = card.querySelector(".quantity button:first-child");
+        let plusButton = card.querySelector(".quantity button:last-child");
+        let quantityInput = card.querySelector(".quantity input");
+
+        minusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        plusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentValue + 1;
+        });
+    });
+});
+        </script>
 </body>
 </html>

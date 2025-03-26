@@ -10,29 +10,22 @@
                     margin: 0;
                 }
                 nav{
-                    border: 10px solid #3E7B27;
-                    background-color:#3E7B27;
-                    color: white;
-                    padding: 6px;
-                    margin: 2px 2px;
-                    text-align: center;
-                    height: 52px;
-                    display: flex;
-                    align-items: center;
-                    gap: 100px;
-                    justify-content:center;
-                    font-size: 28px
-                }
-        
-                nav a{
-                    color: white;
-                    text-decoration: none;
-                }
-                .inaltimenav
-        {
-            width: 1678px;
-            height: 27px;
-            border-radius: 98px;
+            border: 10px solid #3E7B27;
+            background-color:#3E7B27;
+            color: white;
+            padding: 6px;
+            margin: 2px 2px;
+            text-align: center;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content:center;
+            font-size: 28px
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
         }
         .inaltime
         {
@@ -40,9 +33,14 @@
             height: 25px;
             border-radius: 98px;
         }
+        .inaltimenav
+        {
+            width: 1678px;
+            height: 27px;
+            border-radius: 98px;
+        }
         .Navbar_Link a:hover{
             color: #be1717;
-            text-decoration: none;
         }
         .sidebar {
     width: 324px;
@@ -70,6 +68,27 @@
     cursor: pointer;
     font-size:33px;
 }
+.product-container {
+    margin-left: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 260px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+img
+{
+    height:160px;
+    width: 160px;
+}
         </style>
 </head>
 <body>
@@ -80,6 +99,91 @@
         <a href="locatie.html">Locatie</a>
         <a href="Contact.html">Contact</a>
         <a>Produse</a>
-    </nav>   
+    </nav> 
+    <div class="sidebar">
+        <ul>
+            <li><a href="bauturi.html">Băuturi</a></li>
+            <li><a href="dulciuri.html">Dulciuri</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="sosuri.html">Sosuri</a></li>
+        </ul>
+    </div>
+    <div class="product-container">
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs29.html">
+                <img src="/poze/sos rosii.webp" alt="ROSII PASATE VELLUTATA VALFRUTTA">
+                <h3>ROSII PASATE VELLUTATA VALFRUTTA 700G</h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs30.html">
+                <img src="/poze/pesto.webp" alt="SOS BARILLA I PESTO ALLA GENOVESE CON BASILICO FRESCO">
+                <h3>SOS BARILLA I PESTO ALLA GENOVESE CON BASILICO FRESCO 190G</h3>
+            </a>
+            <p class="price">10 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs31.html">
+                <img src="/poze/ket.webp" alt="Ketchup Heinz ">
+                <h3>Ketchup Heinz 570g</h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs32.html">
+                <img src="/poze/ust.webp" alt="Sos cu usturoi Tomi">
+                <h3>Sos cu usturoi Tomi</h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product-card").forEach(card => {
+        let minusButton = card.querySelector(".quantity button:first-child");
+        let plusButton = card.querySelector(".quantity button:last-child");
+        let quantityInput = card.querySelector(".quantity input");
+
+        minusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        plusButton.addEventListener("click", function () {
+            let currentValue = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentValue + 1;
+        });
+    });
+});
+        </script>
+</body>
+</html>  
 </body>
 </html>

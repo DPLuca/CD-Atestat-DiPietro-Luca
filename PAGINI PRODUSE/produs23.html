@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina produse</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        nav {
+            border: 10px solid #3e7b27;
+            background-color: #3e7b27;
+            color: white;
+            padding: 6px;
+            margin: 2px 2px;
+            text-align: center;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .inaltimenav {
+            width: 1678, 5px;
+            height: 27px;
+            border-radius: 98px;
+        }
+
+        .inaltime {
+            width: 950px;
+            height: 25px;
+            border-radius: 98px;
+        }
+
+        .Navbar_Link a:hover {
+            color: #be1717;
+            text-decoration: none;
+        }
+
+        body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-produs {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    gap: 40px;
+    align-items: center;border: 5px solid;
+    border: 5px solid #27ae60;
+}
+
+.imagine-produs {
+    flex: 1;
+}
+
+.imagine-produs img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+.detalii-produs {
+    flex: 1;
+    text-align: left;
+}
+
+.detalii-produs h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.pret {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d62828;
+    margin: 15px 0;
+}
+
+.descriere {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.ingrediente {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.ingrediente h3 {
+    color: #27ae60;
+    margin-bottom: 8px;
+}
+
+.cantitate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cantitate button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cantitate button:hover {
+    background-color: #1f7a45;
+}
+
+.cantitate input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.adauga-in-cos {
+    background: #e76f51;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.adauga-in-cos:hover {
+    background: #d15c40;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="inaltimenav Navbar_Link">
+        <input class="inaltime" type="text" placeholder="Search.." />
+        <a href="/Atestat.html">Acasa</a>
+        <a href="/Aboutus.html">Despre Noi</a>
+        <a href="/locatie.html">Locatie</a>
+        <a href="/Contact.html">Contact</a>
+        <a href="/Produse.html">Produse</a>
+    </nav>
+
+    <div class="container-produs">
+        <div class="imagine-produs">
+            <img src="/poze/crema.webp" alt="CREMA CIOCOLATA PAN DI STELLE">
+        </div>
+
+        <div class="detalii-produs">
+            <h1>CREMA CIOCOLATA PAN DI STELLE 380g</h1>
+            <p class="pret">20 RON / buc</p>
+            <div class="cantitate">
+                <button onclick="scadeCantitate()">-</button>
+                <input type="number" id="cantitate" value="1" min="1">
+                <button onclick="cresteCantitate()">+</button>
+            </div>
+
+            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+        </div>
+    </div>
+</body>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
+        }
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+        }
+    </script>
+
+</body>
+</html>
