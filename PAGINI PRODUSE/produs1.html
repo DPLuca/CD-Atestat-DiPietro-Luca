@@ -211,24 +211,23 @@
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            <button class="adauga-in-cos" onclick="addToCart({ id: 'produs1', name: 'Tricou Alb', price: 50 })"> ADAUGĂ ÎN COȘ </button>
         </div>
     </div>
-</body>
+<script src="java.js"></script>
 <script>
     function cresteCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        cantitate.value = parseInt(cantitate.value) + 1;
-    }
+    let cantitate = document.getElementById("cantitate");
+    cantitate.value = parseInt(cantitate.value) + 1;
+}
 
-    function scadeCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        if (cantitate.value > 1) {
-            cantitate.value = parseInt(cantitate.value) - 1;
-        }
+function scadeCantitate() {
+    let cantitate = document.getElementById("cantitate");
+    if (cantitate.value > 1) {
+        cantitate.value = parseInt(cantitate.value) - 1;
     }
+}
 </script>
-
 </body>
 
 </html>
