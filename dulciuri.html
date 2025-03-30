@@ -8,64 +8,69 @@
         *{
                     margin: 0;
                 }
-                nav{
-            border: 10px solid #3E7B27;
-            background-color:#3E7B27;
-            color: white;
-            padding: 6px;
-            margin: 2px 2px;
-            text-align: center;
-            height: 52px;
-            display: flex;
-            align-items: center;
-            gap: 100px;
-            justify-content:center;
-            font-size: 28px
-        }
-        nav a{
-            color: white;
-            text-decoration: none;
-        }
-        .inaltime
-        {
-            width: 950px;
-            height: 25px;
-            border-radius: 98px;
-        }
-        .inaltimenav
-        {
-            width: 1678px;
-            height: 27px;
-            border-radius: 98px;
-        }
-        .Navbar_Link a:hover{
-            color: #be1717;
-        }
-        .sidebar {
+                nav {
+    border: none;
+    background-color: #2A4D69;
+    color: white;
+    padding: 15px 30px;
+    margin: 0;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 10px;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+nav img.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+.sidebar {
     width: 324px;
-    background: #3E7B27;
+    background: #2A4D69;
     padding: 15px;
     height: 100%;
     position: fixed;
-    top: 62px;
-    left: 0;
+    top: 66px;
     color: white;
-}
-
-.sidebar h3 {
-    margin-top: 0;
+    border-radius: 10px;
 }
 
 .sidebar ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .sidebar ul li {
-    padding: 10px;
+    padding: 12px 0;
     border-bottom: 1px solid #fff;
-    cursor: pointer;
-    font-size:33px;
+    font-size: 18px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.sidebar a:hover {
+    background-color: #1f3650;
+    color: #f5f5f5;
 }
 .product-container {
     margin-left: 365px;
@@ -81,7 +86,6 @@
     padding: 15px;
     text-align: center;
     background: white;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 img
 {
@@ -91,14 +95,15 @@ img
         </style>
 </head>
 <body>
-    <nav class="inaltimenav Navbar_Link"> 
-        <input class="inaltime" type="text" placeholder="Search..">
+    <nav class="inaltimenav Navbar_Link">
+        <img src="/poze/logo.jpg" alt="Logo" class="logo"> 
         <a href="Atestat.html">Acasa</a>
         <a href="Aboutus.html">DespreNoi</a>
         <a href="locatie.html">Locatie</a>
         <a href="Contact.html">Contact</a>
-        <a>Produse</a>
-    </nav>  
+        <a href="Produse.html">Produse</a>
+        <a href="cos.html">Cos</a>
+    </nav>   
     <div class="sidebar">
         <ul>
             <li><a href="bauturi.html">Băuturi</a></li>
@@ -111,7 +116,8 @@ img
         <div class="product-card">
             <a href="PAGINI PRODUSE/produs21.html">
                 <img src="/poze/jeleuri.webp" alt="JELEURI BONELLE">
-                <h3>JELEURI BONELLE 175G</h3>
+                <h3>JELEURI BONELLE</h3>
+                <h3>175G</h3>
             </a>
             <p class="price">8 RON / buc</p>
             <div class="quantity">
@@ -124,7 +130,8 @@ img
         <div class="product-card">
             <a href="PAGINI PRODUSE/produs22.html">
                 <img src="/poze/mini nutela.webp" alt="Crema Ciocolata Nutella 15g ">
-                <h3>Crema Ciocolata Nutella 15g</h3>
+                <h3>Crema Ciocolata Nutella</h3>
+                <h3>15g</h3>
             </a>
             <p class="price">2 RON / buc</p>
             <div class="quantity">

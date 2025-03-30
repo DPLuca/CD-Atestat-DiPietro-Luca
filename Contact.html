@@ -11,104 +11,118 @@
         }
 
         nav {
-            border: 10px solid #3E7B27;
-            background-color: #3E7B27;
-            color: white;
-            padding: 6px;
-            margin: 2, 50px 2, 50px;
-            text-align: center;
-            height: 52px;
-            display: flex;
-            align-items: center;
-            gap: 100px;
-            justify-content: center;
-            font-size: 28px
-        }
+    border: none;
+    background-color: #2A4D69;
+    color: white;
+    padding: 15px 30px;
+    margin: 0;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 10px;
+    gap: 12px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
 
-        body {
-            background-color: #f8f1e4;
-        }
+nav a:hover {
+    background-color: #1f3b47;
+    color: #f1f1f1; 
+}
 
-        .inaltimenav {
-            width: 1678px;
-            height: 27px;
-            border-radius: 98px;
-        }
+nav img.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+body {
+      background-color: #F4E1D2;
+    }
 
-        .inaltime {
-            width: 950px;
-            height: 25px;
-            border-radius: 98px;
-        }
+    .formular-contact {
+        max-width: 500px;
+        background-color: #ffffff;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        width: 650px;
+        height: 470px;
+        border: 3px solid #2A4D69; 
+    }
 
-        .formular-contact {
-            max-width: 500px;
-            background-color: #fff;
-            margin: 50px auto;
-            padding: 30px;
-            border-radius: 10px;
-        }
+    .formular-contact h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2A4D69;
+    }
 
-        .formular-contact h2 {
-            margin-bottom: 20px;
-            text-align: center;
-            color: #3E7B27;
-        }
+    .grup-formular {
+        margin-bottom: 15px;
+    }
 
-        .grup-formular {
-            margin-bottom: 15px;
-        }
+    .grup-formular label {
+        display: block;
+        margin-bottom: 5px;
+        color: #2A4D69;
+    }
 
-        .grup-formular label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
+    .grup-formular input,
+    .grup-formular textarea {
+        width: 96%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #F4E1D2;
+        color: #333;
+    }
 
-        .grup-formular input,
-        .grup-formular textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
+    .grup-formular input:focus,
+    .grup-formular textarea:focus {
+        border-color: #2A4D69;
+        outline: none;
+    }
 
-        .grup-formular textarea {
-            height: 120px;
-        }
+    .grup-formular textarea {
+        height: 120px;
+    }
 
-        .formular-contact button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            background-color: #3E7B27;
-            color: white;
-            font-size: 18px;
-        }
+    .formular-contact button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #2A4D69;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
 
-        .formular-contact button:hover {
-            background-color: #2e5d1f;
-        }
-    </style>
+    .formular-contact button:hover {
+        background-color: #1f3b47;
+    }
+</style>
 </head>
-
 <body>
     <nav class="inaltimenav Navbar_Link">
+        <img src="poze/logo.jpg" alt="Logo" class="logo"> 
         <a href="Atestat.html">Acasa</a>
-        <a href="Aboutus.html">Despre noi</a>
+        <a href="Aboutus.html">DespreNoi</a>
         <a href="locatie.html">Locatie</a>
-        <a>Contact</a>
+        <a href="Contact.html">Contact</a>
         <a href="Produse.html">Produse</a>
-    </nav>
-
+        <a href="cos.html">Cos</a>
+    </nav> 
     <form class="formular-contact" name="formular-contact-sheet">
         <h2>Contactează-ne</h2>
         <div class="grup-formular">

@@ -1,24 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+            margin: 0;
+        }
+        nav {
+    border: none;
+    background-color: #2A4D69;
+    color: white;
+    padding: 15px 30px;
+    margin: 0;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 10px;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #1f3b47;
+    color: #f1f1f1; 
+}
+
+nav img.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+body {
+      background-color: #F4E1D2;
+    }
+    .container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #2A4D69;
+    text-align: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-left: 520px;
+}
+
+        h1 {
+            color: #2A4D69;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .cart-items {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .cart-item p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .cart-item .item-name {
+            flex: 2;
+        }
+
+        .cart-item .item-price {
+            text-align: right;
+            flex: 1;
+        }
+
+        #cart-total {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: right;
+            color: #333;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2A4D69;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #1f3b47;
+        }
+
+        .paypal-button {
+            display: block;
+            width: 100%;
+            background-color: #0070ba;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .paypal-button:hover {
+            background-color: #005f88;
+        }
+    </style>
 </head>
-
 <body>
+    <nav>
+        <a href="Atestat.html">Acasa</a>
+        <a href="Aboutus.html">DespreNoi</a>
+        <a href="locatie.html">Locatie</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Produse.html">Produse</a>
+        <a href="cos.html">Cos</a>
+    </nav>
 
-  <a href="produs1.html">Produs 1</a>
+    <div class="container">
+        <h1>Coșul Meu</h1>
+        <ul id="cart-items" class="cart-items">
+        </ul>
+        <p id="cart-total">Total: 0 RON</p>
+        <button onclick="renderCart()">Actualizează Coșul</button>
+        
+        <div id="paypal-button-container"></div>
+    </div>
 
-  <h1>cos</h1>
-
-  <ul id="cart-items"></ul>
-  <p id="cart-total">Total: 0 RON</p>
-  <button onclick="renderCart()">Actualizează Coșul</button>
-
-  <script src="script.js"></script>
-
+    <script src="https://www.paypal.com/sdk/js?client-id=AICI&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
