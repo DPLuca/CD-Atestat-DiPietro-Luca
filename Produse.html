@@ -8,7 +8,7 @@
         *{
                     margin: 0;
                 }
-                nav {
+                    nav {
     border: none;
     background-color: #2A4D69;
     color: white;
@@ -31,48 +31,49 @@ nav a {
     padding: 8px 16px;
     border-radius: 5px;
 }
-
-nav a:hover {
-    background-color: #1f3b47;
-    color: #f1f1f1; 
-}
-
 nav img.logo {
     height: 40px;
     width: auto;
     margin-right: 20px;
 }
-body {
-      background-color: #F4E1D2;
-    }
-        .sidebar {
+.sidebar {
+    width: 250px;
+    background: #2A4D69;
+    padding: 20px;
     position: fixed;
-    top: 8;
-    left: 0; 
-    cursor: pointer;
-    font-size: 33px;
-    width: 324px;
-    background: #3E7B27;
-    padding: 15px;
-    height: 800px;
-    overflow-y: auto;
+    top: 66px;
+    left: 0;
+    bottom: 0;
+    color: white;
+    z-index: 999;
 }
 
-.sidebar h3 {
-    margin-top: 0;
-}
-
-.sidebar ul {
-    list-style: none;
+        .sidebar ul {
+    list-style-type: none;
     padding: 0;
 }
 
 .sidebar ul li {
-    padding: 10px;
+    padding: 12px 0;
     border-bottom: 1px solid #fff;
-    cursor: pointer;
-    font-size:33px;
+    font-size: 18px;
 }
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.sidebar a:hover {
+    background-color: #1f3650;
+    color: #f5f5f5;
+}
+
 .product-container {
     display: flex;
     gap: 20px;
@@ -83,11 +84,10 @@ body {
 }
 
 .product-card {
-    background: white;
+    background: #2A4D69;;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 260px;
 }
 
@@ -145,14 +145,15 @@ h3 {
 </style>
 </head>
 <body>
-    <nav class="inaltimenav Navbar_Link"> 
-        <input class="inaltime" type="text" placeholder="Search..">
+    <nav class="inaltimenav Navbar_Link">
+        <img src="/poze/logo.jpg" alt="Logo" class="logo"> 
         <a href="Atestat.html">Acasa</a>
         <a href="Aboutus.html">DespreNoi</a>
         <a href="locatie.html">Locatie</a>
         <a href="Contact.html">Contact</a>
-        <a>Produse</a>
-    </nav>
+        <a href="Produse.html">Produse</a>
+        <a href="cos.html">Cos</a>
+    </nav>   
         <div class="sidebar">
             <ul>
                 <li><a href="bauturi.html">Băuturi</a></li>

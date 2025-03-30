@@ -9,45 +9,45 @@
                     margin: 0;
                 }
                 nav {
-    border: none;
-    background-color: #2A4D69;
-    color: white;
-    padding: 15px 30px;
-    margin: 0;
-    text-align: center;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    border-radius: 10px;
-    gap: 12px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-nav img.logo {
+            background-color: #2A4D69;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 35px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        nav img.logo {
     height: 40px;
     width: auto;
     margin-right: 20px;
 }
 .sidebar {
-    width: 324px;
+    width: 250px;
     background: #2A4D69;
-    padding: 15px;
-    height: 100%;
+    padding: 20px;
     position: fixed;
     top: 66px;
+    left: 0;
+    bottom: 0;
     color: white;
-    border-radius: 10px;
+    z-index: 999;
 }
 
-.sidebar ul {
+        .sidebar ul {
     list-style-type: none;
     padding: 0;
 }
@@ -74,23 +74,24 @@ nav img.logo {
 }
 .product-container {
     margin-left: 365px;
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-}
 
+}
 .product-card {
     width: 260px;
-    border: 1px solid #ccc;
+    border: 3px solid #2A4D69;
     padding: 15px;
     text-align: center;
     background: white;
 }
 img
 {
-    height:160px;
-    width: 160px;
+    height: 120px;
+    width: 120px;
 }
         </style>
 </head>
