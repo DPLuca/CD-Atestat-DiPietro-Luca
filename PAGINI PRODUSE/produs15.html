@@ -148,6 +148,14 @@
             width: 100%;
             font-weight: bold;
         }
+        .buton
+        {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer; 
+        }
 
         .adauga-in-cos:hover {
             background: #2A4D69;
@@ -180,34 +188,35 @@
 
         <div class="detalii-produs">
             <h1>BERE MORETTI 3x33CL</h1>
-            <p class="pret">15 RON / buc</p>
+            <p class="pret">15 EURO / buc</p>
             <div class="cantitate">
                 <button onclick="scadeCantitate()">-</button>
                 <input type="number" id="cantitate" value="1" min="1">
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            <button class="buton" onclick="addToCart({ id: 'produs15', name: 'BERE MORETTI 3x33CL', price: 15 })">Cumpără</button>
         </div>
     </div>
-</body>
-<script>
-    function cresteCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        cantitate.value = parseInt(cantitate.value) + 1;
-    }
-
-    function scadeCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        if (cantitate.value > 1) {
-            cantitate.value = parseInt(cantitate.value) - 1;
+    <script src="/java.js"></script>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
         }
-    }
-</script>
-<footer>
-    <p>&copy; 2025 LaPietro</p>
-    <p>Fondator:Di Pietro Luca</p>
-</footer>
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+            
+        }
+    </script>
+      <footer>
+        <p>&copy; 2025 LaPietro</p>
+        <p>Fondator:Di Pietro Luca</p>
+    </footer>
 </body>
 
 </html>

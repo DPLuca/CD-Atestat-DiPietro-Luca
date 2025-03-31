@@ -115,7 +115,14 @@
             justify-content: center;
             margin: 10px 0;
         }
-
+        .buton
+        {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer; 
+        }
         .cantitate button {
             padding: 5px 10px;
             border: none;
@@ -180,7 +187,7 @@
 
         <div class="detalii-produs">
             <h1>Pizza Funghi & Tartufi</h1>
-            <p class="pret">24 RON / buc</p>
+            <p class="pret">24 EURO / buc</p>
             <p class="descriere">
                 Pizza Verace Funghi & Tartufi este o pizza cu topping inedit, bogat în ciuperci asezonate și trufe negre
                 combinate cu sos de usturoi prăjit, sos de ciuperci și brânză Mozzarella.
@@ -218,27 +225,28 @@
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            <button class="buton" onclick="addToCart({ id: 'produs7', name: 'Pizza Funghi & Tartufi', price: 24 })">Cumpără</button>
         </div>
     </div>
-</body>
-<script>
-    function cresteCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        cantitate.value = parseInt(cantitate.value) + 1;
-    }
-
-    function scadeCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        if (cantitate.value > 1) {
-            cantitate.value = parseInt(cantitate.value) - 1;
+    <script src="/java.js"></script>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
         }
-    }
-</script>
-<footer>
-    <p>&copy; 2025 LaPietro</p>
-    <p>Fondator:Di Pietro Luca</p>
-</footer>
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+            
+        }
+    </script>
+      <footer>
+        <p>&copy; 2025 LaPietro</p>
+        <p>Fondator:Di Pietro Luca</p>
+    </footer>
 </body>
 
 </html>

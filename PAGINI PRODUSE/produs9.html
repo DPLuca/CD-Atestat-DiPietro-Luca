@@ -160,6 +160,14 @@
             font-size: 20px;
             margin-top: 10px;
         }   
+        .buton
+        {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer; 
+        }
     </style>
 </head>
 
@@ -180,7 +188,7 @@
 
         <div class="detalii-produs">
             <h1>‘Nduja Salsicce</h1>
-            <p class="pret">22 RON / buc</p>
+            <p class="pret">22 EURO / buc</p>
             <p class="descriere">
                 Pizza Verace ‘Nduja Salsicce este o variantă picantă și inedită a pizzei obișnuite, având blatul dospit
                 înainte de coacere și un topping bogat în ingrediente de calitate superioară: Mozzarella din lapte de
@@ -219,27 +227,28 @@
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            <button class="buton" onclick="addToCart({ id: 'produs9', name: 'Nduja Salsicce', price: 22 })">Cumpără</button>
         </div>
     </div>
-</body>
-<script>
-    function cresteCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        cantitate.value = parseInt(cantitate.value) + 1;
-    }
-
-    function scadeCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        if (cantitate.value > 1) {
-            cantitate.value = parseInt(cantitate.value) - 1;
+    <script src="/java.js"></script>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
         }
-    }
-</script>
-<footer>
-    <p>&copy; 2025 LaPietro</p>
-    <p>Fondator:Di Pietro Luca</p>
-</footer>
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+            
+        }
+    </script>
+      <footer>
+        <p>&copy; 2025 LaPietro</p>
+        <p>Fondator:Di Pietro Luca</p>
+    </footer>
 </body>
 
 </html>

@@ -160,6 +160,14 @@
             font-size: 20px;
             margin-top: 10px;
         }   
+        .buton
+        {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer; 
+        }
     </style>
 </head>
 
@@ -180,7 +188,7 @@
 
         <div class="detalii-produs">
             <h1>Pizza Diavola Edenia</h1>
-            <p class="pret">22 RON / buc</p>
+            <p class="pret">22 EURO / buc</p>
             <p class="descriere">
                 Pizza Diavola este o combinație perfectă de sos de roșii, mozzarella cremoasă și salam picant,
                 completată cu ardei iute și măsline negre. Ideală pentru cei care iubesc gusturile intense și
@@ -209,12 +217,10 @@
                 <input type="number" id="cantitate" value="1" min="1">
                 <button onclick="cresteCantitate()">+</button>
             </div>
-
-            <button class="adauga-in-cos" onclick="addToCart({ id: 'produs1', name: 'Pizza Diavola Edenia', price: 22 })"> ADAUGĂ
-                ÎN COȘ </button>
+            <button class="buton" onclick="addToCart({ id: 'produs1', name: 'Pizza Diavola Edenia', price: 22 })">Cumpără</button>
         </div>
     </div>
-    <script src="java.js"></script>
+    <script src="/java.js"></script>
     <script>
         function cresteCantitate() {
             let cantitate = document.getElementById("cantitate");
@@ -226,6 +232,7 @@
             if (cantitate.value > 1) {
                 cantitate.value = parseInt(cantitate.value) - 1;
             }
+            
         }
     </script>
       <footer>

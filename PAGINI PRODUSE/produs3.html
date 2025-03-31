@@ -148,6 +148,14 @@
             width: 100%;
             font-weight: bold;
         }
+        .buton
+        {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer; 
+        }
 
         .adauga-in-cos:hover {
             background: #2A4D69;
@@ -180,7 +188,7 @@
 
         <div class="detalii-produs">
             <h1>Pizza Verace Mozzarella Di Bufala</h1>
-            <p class="pret">22 RON / buc</p>
+            <p class="pret">22 EURO / buc</p>
             <p class="descriere">
                 Pizza Verace Mozzarella di Bufala este produsa in Italia, cu ingrediente autentice, dupa o reteta
                 originara. Blatul este indelung dospit pentru o textura aerata cu pori mari deschisi in stil ciabatta.
@@ -217,27 +225,28 @@
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            <button class="buton" onclick="addToCart({ id: 'produs3', name: 'Pizza Verace Mozzarella Di Bufala', price: 20 })">Cumpără</button>
         </div>
     </div>
-</body>
-<script>
-    function cresteCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        cantitate.value = parseInt(cantitate.value) + 1;
-    }
-
-    function scadeCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        if (cantitate.value > 1) {
-            cantitate.value = parseInt(cantitate.value) - 1;
+    <script src="/java.js"></script>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
         }
-    }
-</script>
-<footer>
-    <p>&copy; 2025 LaPietro</p>
-    <p>Fondator:Di Pietro Luca</p>
-</footer>
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+            
+        }
+    </script>
+      <footer>
+        <p>&copy; 2025 LaPietro</p>
+        <p>Fondator:Di Pietro Luca</p>
+    </footer>
 </body>
 
 </html>

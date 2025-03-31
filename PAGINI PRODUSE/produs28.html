@@ -160,6 +160,14 @@
             font-size: 20px;
             margin-top: 10px;
         }   
+        .buton
+        {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer; 
+        }
     </style>
 </head>
 
@@ -180,34 +188,35 @@
 
         <div class="detalii-produs">
             <h1>CIOCOLATA NOVI FONDENTE 100G </h1>
-            <p class="pret">8 RON / buc</p>
+            <p class="pret">8 EURO / buc</p>
             <div class="cantitate">
                 <button onclick="scadeCantitate()">-</button>
                 <input type="number" id="cantitate" value="1" min="1">
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos">ADAUGĂ ÎN COȘ</button>
+            <button class="buton" onclick="addToCart({ id: 'produs28', name: 'CIOCOLATA NOVI FONDENTE 100G', price: 8 })">Cumpără</button>
         </div>
     </div>
-</body>
-<script>
-    function cresteCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        cantitate.value = parseInt(cantitate.value) + 1;
-    }
-
-    function scadeCantitate() {
-        let cantitate = document.getElementById("cantitate");
-        if (cantitate.value > 1) {
-            cantitate.value = parseInt(cantitate.value) - 1;
+    <script src="/java.js"></script>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
         }
-    }
-</script>
-<footer>
-    <p>&copy; 2025 LaPietro</p>
-    <p>Fondator:Di Pietro Luca</p>
-</footer>
+
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+            
+        }
+    </script>
+      <footer>
+        <p>&copy; 2025 LaPietro</p>
+        <p>Fondator:Di Pietro Luca</p>
+    </footer>
 </body>
 
 </html>
