@@ -8,30 +8,29 @@
         *{
                     margin: 0;
                 }
-                    nav {
-    border: none;
-    background-color: #2A4D69;
-    color: white;
-    padding: 15px 30px;
-    margin: 0;
-    text-align: center;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    border-radius: 10px;
-    gap: 12px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-nav img.logo {
+                nav {
+            background-color: #2A4D69;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 35px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        nav img.logo {
     height: 40px;
     width: auto;
     margin-right: 20px;
@@ -73,75 +72,56 @@ nav img.logo {
     background-color: #1f3650;
     color: #f5f5f5;
 }
-
 .product-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    margin-left: 300px;
-}
-
-.product-card {
-    background: #2A4D69;;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    width: 260px;
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-h3 {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.pret{
-    font-weight: bold;
-    color: #e60000;
-    margin: 5px 0;
-}
-
-.cantitate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin: 10px 0;
-}
-
-.cantitate button {
-    background-color: #ddd;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.cantitate input {
-    width: 40px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 5px;
-}
-
-.add-to-cart {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.add-to-cart:hover {
-    background-color: #218838;
-}
+            margin-left: 300px;
+            margin-top: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            width: 260px;
+            border: 3px solid #2A4D69;
+            padding: 15px;
+            text-align: center;
+            background: white;
+        }
+        img {
+            height: 160px;
+            width: 160px;
+        }price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2A4D69;
+            margin: 10px 0;
+        }
+        
+        .quantity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+        .quantity button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer;
+        }
+        .add-to-cart {
+            background-color: #2A4D69;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .add-to-cart:hover { background-color: #1f3650; }
+        
 </style>
 </head>
 <body>
@@ -160,6 +140,8 @@ h3 {
                 <li><a href="dulciuri.html">Dulciuri</a></li>
                 <li><a href="pizza.html">Pizza</a></li>
                 <li><a href="sosuri.html">Sosuri</a></li>
+                <li><a href="paste.html">Paste</a></li>
+                <li><a href="ton.html">Ton</a></li>
             </ul>
         </div>
         <div class="product-container">
@@ -179,7 +161,7 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs2.html">
                     <img src="poze/pizzaHawaii.webp" alt="Pizza pizzaHawaiiana">
-                    <h3>Pizza Guseppe Hawaii Dr. Oetker cu sunca si ananas</h3>
+                    <h3>Pizza Hawaii cu sunca si ananas</h3>
                 </a>
                 <p class="price">20 RON / buc</p>
                 <div class="quantity">
@@ -192,7 +174,7 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs3.html">
                     <img src="poze/PizzaMozzarella.jpg" alt="Pizza Verace">
-                    <h3>Pizza Verace Mozzarella Di Bufala</h3>
+                    <h3>Pizza Mozzarella Di Bufala</h3>
                 </a>
                 <p class="price">22 RON / buc</p>
                 <div class="quantity">
@@ -218,7 +200,7 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs5.html">
                     <img src="poze/pizzaprosciutto.jpg" alt="Pizza Prosciutto">
-                    <h3>Pizza Ristorante Prosciutto, Dr. Oetker</h3>
+                    <h3>Pizza Ristorante Prosciutto</h3>
                 </a>
                 <p class="price">18 RON / buc</p>
                 <div class="quantity">
@@ -309,7 +291,7 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs12.html">
                     <img src="poze/PizzaSalam2.jpg" alt="Pizza Ristorante fără gluten cu salam">
-                    <h3>Pizza Ristorante fără gluten cu salam</h3>
+                    <h3>Pizza fără gluten cu salam</h3>
                 </a>
                 <p class="price">18 RON / buc</p>
                 <div class="quantity">
@@ -336,6 +318,7 @@ h3 {
                 <a href="PAGINI PRODUSE/produs14.html">
                     <img src="poze/peroni.webp" alt="BERE PERONI ">
                     <h3>BERE PERONI </h3>
+                    <h3>33CL</h3>
                 </a>
                 <p class="price">5 RON / buc</p>
                 <div class="quantity">
@@ -348,9 +331,10 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs15.html">
                     <img src="poze/moreti.webp" alt="BERE MORETTI">
-                    <h3>BERE MORETTI 3x33CL</h3>
+                    <h3>BERE MORETTI</h3>
+                    <h3>3x33CL</h3>
                 </a>
-                <p class="price">16 RON / buc</p>
+                <p class="price">15 RON / buc</p>
                 <div class="quantity">
                     <button>-</button>
                     <input type="number" value="1">
@@ -426,7 +410,8 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs21.html">
                     <img src="/poze/jeleuri.webp" alt="JELEURI BONELLE">
-                    <h3>JELEURI BONELLE 175G</h3>
+                    <h3>JELEURI BONELLE</h3>
+                    <h3>175G</h3>
                 </a>
                 <p class="price">8 RON / buc</p>
                 <div class="quantity">
@@ -439,7 +424,8 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs22.html">
                     <img src="/poze/mini nutela.webp" alt="Crema Ciocolata Nutella 15g ">
-                    <h3>Crema Ciocolata Nutella 15g</h3>
+                    <h3>Crema Ciocolata Nutella</h3>
+                    <h3>15g</h3>
                 </a>
                 <p class="price">2 RON / buc</p>
                 <div class="quantity">
@@ -530,7 +516,7 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs29.html">
                     <img src="/poze/sos rosii.webp" alt="ROSII PASATE VELLUTATA VALFRUTTA">
-                    <h3>ROSII PASATE VELLUTATA VALFRUTTA 700G</h3>
+                    <h3>ROSII PASATE VELLUTATA</h3>
                 </a>
                 <p class="price">8 RON / buc</p>
                 <div class="quantity">
@@ -543,7 +529,7 @@ h3 {
             <div class="product-card">
                 <a href="PAGINI PRODUSE/produs30.html">
                     <img src="/poze/pesto.webp" alt="SOS BARILLA I PESTO ALLA GENOVESE CON BASILICO FRESCO">
-                    <h3>SOS BARILLA I PESTO ALLA GENOVESE CON BASILICO FRESCO 190G</h3>
+                    <h3>SOS BARILLA PESTO</h3>
                 </a>
                 <p class="price">10 RON / buc</p>
                 <div class="quantity">
@@ -572,6 +558,110 @@ h3 {
                     <h3>Sos cu usturoi Tomi</h3>
                 </a>
                 <p class="price">8 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs33.html">
+                    <img src="/poze/pene.avif" alt="Penne Barilla">
+                    <h3>Penne Integrale Barilla</h3>
+                </a>
+                <p class="price">10 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs34.html">
+                    <img src="/poze/spaghete.webp" alt="Spaghetti Barilla">
+                    <h3>Spaghetti Integrale Barilla</h3>
+                </a>
+                <p class="price">12 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs35.html">
+                    <img src="/poze/tagliatele.webp" alt="Tagliatelle Barilla">
+                    <h3>Tagliatelle Barilla</h3>
+                </a>
+                <p class="price">8 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs36.html">
+                    <img src="/poze/farfalle.webp" alt="Farfalle Integrale Barilla">
+                    <h3>Farfalle Integrale Barilla</h3>
+                </a>
+                <p class="price">8 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs37.html">
+                    <img src="/poze/ton conserva.avif" alt="Tonno Rio Mare">
+                    <h3>Tonno Rio Mare 1BUC</h3>
+                </a>
+                <p class="price">15 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs38.html">
+                    <img src="/poze/ton 2.jpg" alt="Tonno Rio Mare 2">
+                    <h3>Tonno Rio Mare 2BUC</h3>
+                </a>
+                <p class="price">17 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs39.html">
+                    <img src="/poze/ton 3.jpg" alt="Tonno Rio Mare 3">
+                    <h3>Tonno Rio Mare 3BUC</h3>
+                </a>
+                <p class="price">19 RON / buc</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+            </div>
+            <div class="product-card">
+                <a href="PAGINI PRODUSE/produs40.html">
+                    <img src="/poze/ton 4.jpg" alt="Tonno Rio Mare 4">
+                    <h3>Tonno Rio Mare 4BUC</h3>
+                </a>
+                <p class="price">21 RON / buc</p>
                 <div class="quantity">
                     <button>-</button>
                     <input type="number" value="1">

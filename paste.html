@@ -2,36 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
     <title>Document</title>
     <style>
         *{
                     margin: 0;
-         }
-         nav {
-    border: none;
-    background-color: #2A4D69;
-    color: white;
-    padding: 15px 30px;
-    margin: 0;
-    text-align: center;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    border-radius: 10px;
-    gap: 12px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-nav img.logo {
+                }
+                nav {
+            background-color: #2A4D69;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 35px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        nav img.logo {
     height: 40px;
     width: auto;
     margin-right: 20px;
@@ -73,37 +73,25 @@ nav img.logo {
     background-color: #1f3650;
     color: #f5f5f5;
 }
-
 .product-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    margin-left: 300px;
-}
-        .product-container {
-            margin-left: 365px;
+            margin-left: 300px;
+            margin-top: 70px;
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             padding: 20px;
-            position: sticky;
         }
-.product-card {
-    width: 260px;
-    border: 3px solid #2A4D69;
-    padding: 15px;
-    text-align: center;
-    background: white;
-}
-img
-{
-    height: 120px;
-    width: 120px;
-    object-fit: cover;
-}
-price {
+        .product-card {
+            width: 260px;
+            border: 3px solid #2A4D69;
+            padding: 15px;
+            text-align: center;
+            background: white;
+        }
+        img {
+            height: 160px;
+            width: 160px;
+        }price {
             font-size: 18px;
             font-weight: bold;
             color: #2A4D69;
@@ -135,7 +123,6 @@ price {
         
         .add-to-cart:hover { background-color: #1f3650; }
         
-
         </style>
 </head>
 <body>
@@ -147,7 +134,7 @@ price {
         <a href="Contact.html">Contact</a>
         <a href="Produse.html">Produse</a>
         <a href="cos.html">Cos</a>
-    </nav>   
+    </nav>      
     <div class="sidebar">
         <ul>
             <li><a href="bauturi.html">Băuturi</a></li>
@@ -160,89 +147,9 @@ price {
     </div>
     <div class="product-container">
         <div class="product-card">
-            <a href="PAGINI PRODUSE/produs13.html">
-                <img src="poze/apa.webp" alt="APA ACQUA PANNA STICLA">
-                <h3>APA ACQUA PANNA STICLA 750ML</h3>
-            </a>
-            <p class="price">4 RON / buc</p>
-            <div class="quantity">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-            </div>
-            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
-        </div>
-        <div class="product-card">
-            <a href="PAGINI PRODUSE/produs14.html">
-                <img src="poze/peroni.webp" alt="BERE PERONI ">
-                <h3>BERE PERONI </h3>
-                <h3>33CL</h3>
-            </a>
-            <p class="price">5 RON / buc</p>
-            <div class="quantity">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-            </div>
-            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
-        </div>
-        <div class="product-card">
-            <a href="PAGINI PRODUSE/produs15.html">
-                <img src="poze/moreti.webp" alt="BERE MORETTI">
-                <h3>BERE MORETTI</h3>
-                <h3>3x33CL</h3>
-            </a>
-            <p class="price">15 RON / buc</p>
-            <div class="quantity">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-            </div>
-            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
-        </div>
-        <div class="product-card">
-            <a href="PAGINI PRODUSE/produs16.html">
-                <img src="poze/more.webp" alt="BERE MORETTI ZERO">
-                <h3>BERE MORETTI ZERO 3x33 CL</h3>
-            </a>
-            <p class="price">17 RON / buc</p>
-            <div class="quantity">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-            </div>
-            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
-        </div>
-        <div class="product-card">
-            <a href="PAGINI PRODUSE/produs17.html">
-                <img src="poze/vin.webp" alt="Vin Spumant Asti Cinzano">
-                <h3>Vin Spumant Asti Cinzano 750ml</h3>
-            </a>
-            <p class="price">35 RON / buc</p>
-            <div class="quantity">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-            </div>
-            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
-        </div>
-        <div class="product-card">
-            <a href="PAGINI PRODUSE/produs18.html">
-                <img src="poze/ceai.webp" alt="CEAI ESTATHE LIMONE">
-                <h3>CEAI ESTATHE LIMONE 200ML</h3>
-            </a>
-            <p class="price">24 RON / buc</p>
-            <div class="quantity">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-            </div>
-            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
-        </div>
-        <div class="product-card">
-            <a href="PAGINI PRODUSE/produs19.html">
-                <img src="poze/suc.webp" alt="SUC SAN BENEDETTO ZERO ARANCIA ROSSA">
-                <h3>SUC SAN BENEDETTO ZERO ARANCIA ROSSA 900ML</h3>
+            <a href="PAGINI PRODUSE/produs33.html">
+                <img src="/poze/pene.avif" alt="Penne Barilla">
+                <h3>Penne Integrale Barilla</h3>
             </a>
             <p class="price">10 RON / buc</p>
             <div class="quantity">
@@ -253,9 +160,9 @@ price {
             <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
         </div>
         <div class="product-card">
-            <a href="PAGINI PRODUSE/produs20.html">
-                <img src="poze/ceai2.webp" alt="CEAI SOLUBIL BONOMELLI CON MIELE E ARANCIA">
-                <h3>CEAI SOLUBIL BONOMELLI CON MIELE E ARANCIA </h3>
+            <a href="PAGINI PRODUSE/produs34.html">
+                <img src="/poze/spaghete.webp" alt="Spaghetti Barilla">
+                <h3>Spaghetti Integrale Barilla</h3>
             </a>
             <p class="price">12 RON / buc</p>
             <div class="quantity">
@@ -265,7 +172,33 @@ price {
             </div>
             <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
         </div>
-    </div>    
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs35.html">
+                <img src="/poze/tagliatele.webp" alt="Tagliatelle Barilla">
+                <h3>Tagliatelle Barilla</h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        <div class="product-card">
+            <a href="PAGINI PRODUSE/produs36.html">
+                <img src="/poze/farfalle.webp" alt="Farfalle Integrale Barilla">
+                <h3>Farfalle Integrale Barilla</h3>
+            </a>
+            <p class="price">8 RON / buc</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">ADAUGĂ ÎN COȘ</button>
+        </div>
+        </div>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".product-card").forEach(card => {
@@ -287,5 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
         </script>
+</body>
+</html>  
 </body>
 </html>

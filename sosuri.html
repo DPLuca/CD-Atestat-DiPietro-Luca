@@ -10,113 +10,146 @@
                     margin: 0;
                 }
                 nav {
-    border: none;
-    background-color: #2A4D69;
-    color: white;
-    padding: 15px 30px;
-    margin: 0;
-    text-align: center;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    border-radius: 10px;
-    gap: 12px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background-color: #1f3b47;
-    color: #f1f1f1; 
-}
-
-nav img.logo {
+            background-color: #2A4D69;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 35px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        nav img.logo {
     height: 40px;
     width: auto;
     margin-right: 20px;
 }
-body {
-      background-color: #F4E1D2;
-    }
-        .sidebar {
-    width: 324px;
-    background: #3E7B27;
-    padding: 15px;
-    height: 100%;
+.sidebar {
+    width: 250px;
+    background: #2A4D69;
+    padding: 20px;
     position: fixed;
-    top: 62px;
+    top: 66px;
     left: 0;
+    bottom: 0;
     color: white;
+    z-index: 999;
 }
 
-.sidebar h3 {
-    margin-top: 0;
-}
-
-.sidebar ul {
-    list-style: none;
+        .sidebar ul {
+    list-style-type: none;
     padding: 0;
 }
 
 .sidebar ul li {
-    padding: 10px;
+    padding: 12px 0;
     border-bottom: 1px solid #fff;
-    cursor: pointer;
-    font-size:33px;
-}
-.product-container {
-    margin-left: 365px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    font-size: 18px;
 }
 
-.product-card {
-    width: 260px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-    background: white;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+
 }
-img
-{
-    height:160px;
-    width: 160px;
+
+.sidebar a:hover {
+    background-color: #1f3650;
+    color: #f5f5f5;
 }
+.product-container {
+            margin-left: 300px;
+            margin-top: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            width: 260px;
+            border: 3px solid #2A4D69;
+            padding: 15px;
+            text-align: center;
+            background: white;
+        }
+        img {
+            height: 160px;
+            width: 160px;
+        }price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2A4D69;
+            margin: 10px 0;
+        }
+        
+        .quantity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+        .quantity button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer;
+        }
+        .add-to-cart {
+            background-color: #2A4D69;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .add-to-cart:hover { background-color: #1f3650; }
+        
         </style>
 </head>
 <body>
-    <nav class="inaltimenav Navbar_Link"> 
-        <input class="inaltime" type="text" placeholder="Search..">
+    <nav class="inaltimenav Navbar_Link">
+        <img src="/poze/logo.jpg" alt="Logo" class="logo"> 
         <a href="Atestat.html">Acasa</a>
         <a href="Aboutus.html">DespreNoi</a>
         <a href="locatie.html">Locatie</a>
         <a href="Contact.html">Contact</a>
-        <a>Produse</a>
-    </nav> 
+        <a href="Produse.html">Produse</a>
+        <a href="cos.html">Cos</a>
+    </nav>      
     <div class="sidebar">
         <ul>
             <li><a href="bauturi.html">Băuturi</a></li>
             <li><a href="dulciuri.html">Dulciuri</a></li>
             <li><a href="pizza.html">Pizza</a></li>
             <li><a href="sosuri.html">Sosuri</a></li>
+            <li><a href="paste.html">Paste</a></li>
+            <li><a href="ton.html">Ton</a></li>
         </ul>
     </div>
     <div class="product-container">
         <div class="product-card">
             <a href="PAGINI PRODUSE/produs29.html">
                 <img src="/poze/sos rosii.webp" alt="ROSII PASATE VELLUTATA VALFRUTTA">
-                <h3>ROSII PASATE VELLUTATA VALFRUTTA 700G</h3>
+                <h3>ROSII PASATE VELLUTATA</h3>
             </a>
             <p class="price">8 RON / buc</p>
             <div class="quantity">
@@ -129,7 +162,7 @@ img
         <div class="product-card">
             <a href="PAGINI PRODUSE/produs30.html">
                 <img src="/poze/pesto.webp" alt="SOS BARILLA I PESTO ALLA GENOVESE CON BASILICO FRESCO">
-                <h3>SOS BARILLA I PESTO ALLA GENOVESE CON BASILICO FRESCO 190G</h3>
+                <h3>SOS BARILLA PESTO</h3>
             </a>
             <p class="price">10 RON / buc</p>
             <div class="quantity">
