@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,169 +9,170 @@
         * {
             margin: 0;
         }
+
         nav {
-            border: 10px solid #3e7b27;
-            background-color: #3e7b27;
+            background-color: #2A4D69;
             color: white;
-            padding: 6px;
-            margin: 2px 2px;
-            text-align: center;
-            height: 52px;
+            padding: 15px 30px;
             display: flex;
             align-items: center;
-            gap: 100px;
-            justify-content: center;
-            font-size: 28px;
+            justify-content: space-between;
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 35px;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
         }
 
-        .inaltimenav {
-            width: 1678, 5px;
-            height: 27px;
-            border-radius: 98px;
-        }
-
-        .inaltime {
-            width: 950px;
-            height: 25px;
-            border-radius: 98px;
-        }
-
-        .Navbar_Link a:hover {
-            color: #be1717;
-            text-decoration: none;
+        nav img.logo {
+            height: 40px;
+            width: auto;
+            margin-right: 20px;
         }
 
         body {
-    background-color: #f4f4f4;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            background-color: whitesmoke;
+        }
 
-.container-produs {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    display: flex;
-    gap: 40px;
-    align-items: center;border: 5px solid;
-    border: 5px solid #27ae60;
-}
+        .container-produs {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 5px solid;
+            border: 5px solid #2A4D69;
+            margin-top: 124px;
+        }
 
-.imagine-produs {
-    flex: 1;
-}
+        .imagine-produs {
+            flex: 1;
+        }
 
-.imagine-produs img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 12px;
-}
+        .imagine-produs img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+        }
 
-.detalii-produs {
-    flex: 1;
-    text-align: left;
-}
+        .detalii-produs {
+            flex: 1;
+            text-align: left;
+        }
 
-.detalii-produs h1 {
-    font-size: 28px;
-    color: #222;
-    margin-bottom: 10px;
-}
+        .detalii-produs h1 {
+            font-size: 28px;
+            color: darkblue;
+            margin-bottom: 10px;
+        }
 
-.pret {
-    font-size: 24px;
-    font-weight: bold;
-    color: #d62828;
-    margin: 15px 0;
-}
+        .pret {
+            font-size: 24px;
+            font-weight: bold;
+            color: darkblue;
+            margin: 15px 0;
+        }
 
-.descriere {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
+        .descriere {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
 
-.ingrediente {
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 20px;
-}
+        .ingrediente {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: black;
+            margin-bottom: 20px;
+        }
 
-.ingrediente h3 {
-    color: #27ae60;
-    margin-bottom: 8px;
-}
+        .ingrediente h3 {
+            color: black;
+            margin-bottom: 8px;
+        }
 
-.cantitate {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
+        .cantitate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
 
-.cantitate button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        .cantitate button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #2A4D69;
+            color: white;
+            cursor: pointer;
+        }
 
-.cantitate button:hover {
-    background-color: #1f7a45;
-}
+        .cantitate button:hover {
+            background-color: #2A4D69;
+        }
 
-.cantitate input {
-    width: 50px;
-    text-align: center;
-    font-size: 18px;
-    border: 2px solid #27ae60;
-    border-radius: 5px;
-    padding: 5px;
-}
+        .cantitate input {
+            width: 50px;
+            text-align: center;
+            font-size: 18px;
+            border: 2px solid #2A4D69;
+            border-radius: 5px;
+            padding: 5px;
+        }
 
-.adauga-in-cos {
-    background: #e76f51;
-    color: white;
-    padding: 12px 18px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    width: 100%;
-    font-weight: bold;
-}
+        .adauga-in-cos {
+            background: #2A4D69;
+            color: whitesmoke;
+            padding: 12px 18px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: bold;
+        }
 
-.adauga-in-cos:hover {
-    background: #d15c40;
-}
-
+        .adauga-in-cos:hover {
+            background: #2A4D69;
+        }
+        footer {
+            background-color: #2A4D69;
+            color: whitesmoke;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            margin-top: 10px;
+        }   
     </style>
 </head>
+
 <body>
     <nav class="inaltimenav Navbar_Link">
-        <input class="inaltime" type="text" placeholder="Search.." />
+        <img src="/poze/logo.jpg" alt="Logo" class="logo">
         <a href="/Atestat.html">Acasa</a>
-        <a href="/Aboutus.html">Despre Noi</a>
+        <a href="/Aboutus.html">DespreNoi</a>
         <a href="/locatie.html">Locatie</a>
         <a href="/Contact.html">Contact</a>
         <a href="/Produse.html">Produse</a>
+        <a href="/cos.html">Cos</a>
     </nav>
-
     <div class="container-produs">
         <div class="imagine-produs">
             <img src="/poze/brios.webp" alt="PRAJITURA KINDER 10 BRIOSS CU LAPTE 270G">
@@ -189,19 +191,23 @@
         </div>
     </div>
 </body>
-    <script>
-        function cresteCantitate() {
-            let cantitate = document.getElementById("cantitate");
-            cantitate.value = parseInt(cantitate.value) + 1;
-        }
+<script>
+    function cresteCantitate() {
+        let cantitate = document.getElementById("cantitate");
+        cantitate.value = parseInt(cantitate.value) + 1;
+    }
 
-        function scadeCantitate() {
-            let cantitate = document.getElementById("cantitate");
-            if (cantitate.value > 1) {
-                cantitate.value = parseInt(cantitate.value) - 1;
-            }
+    function scadeCantitate() {
+        let cantitate = document.getElementById("cantitate");
+        if (cantitate.value > 1) {
+            cantitate.value = parseInt(cantitate.value) - 1;
         }
-    </script>
-
+    }
+</script>
+<footer>
+    <p>&copy; 2025 LaPietro</p>
+    <p>Fondator:Di Pietro Luca</p>
+</footer>
 </body>
+
 </html>

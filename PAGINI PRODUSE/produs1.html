@@ -11,47 +11,37 @@
         }
 
         nav {
-            border: 10px solid #3e7b27;
-            background-color: #3e7b27;
+            background-color: #2A4D69;
             color: white;
-            padding: 6px;
-            margin: 2px 2px;
-            text-align: center;
-            height: 52px;
+            padding: 15px 30px;
             display: flex;
             align-items: center;
-            gap: 100px;
-            justify-content: center;
-            font-size: 28px;
+            justify-content: space-between;
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 35px;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
         }
 
-        .inaltimenav {
-            width: 1678, 5px;
-            height: 27px;
-            border-radius: 98px;
-        }
-
-        .inaltime {
-            width: 950px;
-            height: 25px;
-            border-radius: 98px;
-        }
-
-        .Navbar_Link a:hover {
-            color: #be1717;
-            text-decoration: none;
+        nav img.logo {
+            height: 40px;
+            width: auto;
+            margin-right: 20px;
         }
 
         body {
-            background-color: #f4f4f4;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
+            background-color: whitesmoke;
         }
 
         .container-produs {
@@ -63,8 +53,11 @@
             display: flex;
             gap: 40px;
             align-items: center;
+            justify-content: center;
+            text-align: center;
             border: 5px solid;
-            border: 5px solid #27ae60;
+            border: 5px solid #2A4D69;
+            margin-top: 124px;
         }
 
         .imagine-produs {
@@ -84,20 +77,20 @@
 
         .detalii-produs h1 {
             font-size: 28px;
-            color: #222;
+            color: darkblue;
             margin-bottom: 10px;
         }
 
         .pret {
             font-size: 24px;
             font-weight: bold;
-            color: #d62828;
+            color: darkblue;
             margin: 15px 0;
         }
 
         .descriere {
             font-size: 18px;
-            color: #555;
+            color: black;
             margin-bottom: 20px;
             line-height: 1.5;
         }
@@ -107,48 +100,46 @@
             padding: 15px;
             border-radius: 10px;
             font-size: 16px;
-            color: #444;
+            color: black;
             margin-bottom: 20px;
         }
 
         .ingrediente h3 {
-            color: #27ae60;
+            color: black;
             margin-bottom: 8px;
         }
 
         .cantitate {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
+            justify-content: center;
+            margin: 10px 0;
         }
 
         .cantitate button {
-            background-color: #27ae60;
-            color: white;
+            padding: 5px 10px;
             border: none;
-            padding: 10px 15px;
-            font-size: 18px;
+            background-color: #2A4D69;
+            color: white;
             cursor: pointer;
-            border-radius: 5px;
         }
 
         .cantitate button:hover {
-            background-color: #1f7a45;
+            background-color: #2A4D69;
         }
 
         .cantitate input {
             width: 50px;
             text-align: center;
             font-size: 18px;
-            border: 2px solid #27ae60;
+            border: 2px solid #2A4D69;
             border-radius: 5px;
             padding: 5px;
         }
 
         .adauga-in-cos {
-            background: #e76f51;
-            color: white;
+            background: #2A4D69;
+            color: whitesmoke;
             padding: 12px 18px;
             border: none;
             font-size: 20px;
@@ -159,21 +150,29 @@
         }
 
         .adauga-in-cos:hover {
-            background: #d15c40;
+            background: #2A4D69;
         }
+        footer {
+            background-color: #2A4D69;
+            color: whitesmoke;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            margin-top: 10px;
+        }   
     </style>
 </head>
 
 <body>
     <nav class="inaltimenav Navbar_Link">
-        <input class="inaltime" type="text" placeholder="Search.." />
+        <img src="/poze/logo.jpg" alt="Logo" class="logo">
         <a href="/Atestat.html">Acasa</a>
-        <a href="/Aboutus.html">Despre Noi</a>
+        <a href="/Aboutus.html">DespreNoi</a>
         <a href="/locatie.html">Locatie</a>
         <a href="/Contact.html">Contact</a>
         <a href="/Produse.html">Produse</a>
+        <a href="/cos.html">Cos</a>
     </nav>
-
     <div class="container-produs">
         <div class="imagine-produs">
             <img src="/poze/pizzadiav.png" alt="Pizza Diavola">
@@ -211,23 +210,28 @@
                 <button onclick="cresteCantitate()">+</button>
             </div>
 
-            <button class="adauga-in-cos" onclick="addToCart({ id: 'produs1', name: 'Tricou Alb', price: 50 })"> ADAUGĂ ÎN COȘ </button>
+            <button class="adauga-in-cos" onclick="addToCart({ id: 'produs1', name: 'Pizza Diavola Edenia', price: 22 })"> ADAUGĂ
+                ÎN COȘ </button>
         </div>
     </div>
-<script src="java.js"></script>
-<script>
-    function cresteCantitate() {
-    let cantitate = document.getElementById("cantitate");
-    cantitate.value = parseInt(cantitate.value) + 1;
-}
+    <script src="java.js"></script>
+    <script>
+        function cresteCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            cantitate.value = parseInt(cantitate.value) + 1;
+        }
 
-function scadeCantitate() {
-    let cantitate = document.getElementById("cantitate");
-    if (cantitate.value > 1) {
-        cantitate.value = parseInt(cantitate.value) - 1;
-    }
-}
-</script>
+        function scadeCantitate() {
+            let cantitate = document.getElementById("cantitate");
+            if (cantitate.value > 1) {
+                cantitate.value = parseInt(cantitate.value) - 1;
+            }
+        }
+    </script>
+      <footer>
+        <p>&copy; 2025 LaPietro</p>
+        <p>Fondator:Di Pietro Luca</p>
+    </footer>
 </body>
 
 </html>
