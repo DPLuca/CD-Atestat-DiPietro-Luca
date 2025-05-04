@@ -211,13 +211,12 @@
                     <li><strong>Alergeni:</strong> Poate conține urme de țelină.</li>
                 </ul>
             </div>
-
             <div class="cantitate">
                 <button onclick="scadeCantitate()">-</button>
                 <input type="number" id="cantitate" value="1" min="1">
                 <button onclick="cresteCantitate()">+</button>
             </div>
-            <button class="buton" onclick="addToCart({ id: 'produs1', name: 'Pizza Diavola Edenia', price: 22 })">Cumpără</button>
+            <button class="buton" onclick="addToCart({ id: 'produs1', name: 'Pizza Diavola Edenia', price: 22  })">Cumpără</button>
         </div>
     </div>
     <script src="/java.js"></script>
@@ -232,10 +231,9 @@
             if (cantitate.value > 1) {
                 cantitate.value = parseInt(cantitate.value) - 1;
             }
-            
         }
     </script>
-      <footer>
+    <footer>
         <p>&copy; 2025 LaPietro</p>
         <p>Fondator:Di Pietro Luca</p>
     </footer>

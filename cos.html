@@ -143,7 +143,7 @@ body {
 </head>
 <body>
     <nav class="inaltimenav Navbar_Link">
-        <img src="poze/logo.jpg" alt="Logo" class="logo"> 
+        <img src="./poze/logo.jpg" alt="Logo" class="logo">
         <a href="Atestat.html">Acasa</a>
         <a href="Aboutus.html">DespreNoi</a>
         <a href="locatie.html">Locatie</a>
@@ -151,21 +151,23 @@ body {
         <a href="Produse.html">Produse</a>
         <a href="cos.html">Cos</a>
     </nav>
+
     <div class="container">
         <h1>Coș</h1>
         <ul id="cart-items" class="cart-items">
         </ul>
         <p id="cart-total">Total: 0 EURO</p>
-        <button onclick="renderCart()">Plateste</button>
+        <button id="pay-button" onclick="showPaymentMethods()" style="display:none;">Plătește</button>
         
-        <div id="paypal-button-container"></div>
+        <div id="payment-methods" style="display:none;">
+            <div id="paypal-button-container"></div>
+        </div>
     </div>
 
     <script src="https://www.paypal.com/sdk/js?client-id=AZANqmBWFTHGUDXPRVSkMrHNnPfP9O7bNXcqJ4Wfv8WP_PmYy3mxlZBr77c_u03aIrJkqhehoB4MSdBM&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
 
-    <script src="/java.js"></script>
-</body>
-<footer>
+    <script src="java.js"></script>
+</body><footer>
     <p>&copy; 2025 LaPietro</p>
     <p>Fondator:Di Pietro Luca</p>
 </footer>
