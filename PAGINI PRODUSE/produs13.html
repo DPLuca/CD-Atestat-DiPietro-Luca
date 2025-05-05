@@ -148,17 +148,19 @@
             width: 100%;
             font-weight: bold;
         }
-        .buton
-        {
+
+        .buton {
             padding: 5px 10px;
             border: none;
             background-color: #2A4D69;
             color: white;
-            cursor: pointer; 
+            cursor: pointer;
         }
+
         .adauga-in-cos:hover {
             background: #2A4D69;
         }
+
         footer {
             background-color: #2A4D69;
             color: whitesmoke;
@@ -166,7 +168,7 @@
             padding: 15px;
             font-size: 20px;
             margin-top: 10px;
-        }   
+        }
     </style>
 </head>
 
@@ -193,7 +195,8 @@
                 <input type="number" id="cantitate" value="1" min="1">
                 <button onclick="cresteCantitate()">+</button>
             </div>
-            <button class="buton" onclick="addToCartWithQuantity('produs13', 'APA ACQUA PANNA STICLA 750ML', 4)">Cumpără</button>
+            <button class="buton"
+                onclick="addToCartWithQuantity('produs13', 'APA ACQUA PANNA STICLA 750ML', 4)">Cumpără</button>
         </div>
     </div>
     <script src="/java.js"></script>
@@ -208,10 +211,10 @@
             if (cantitate.value > 1) {
                 cantitate.value = parseInt(cantitate.value) - 1;
             }
-            
+
         }
     </script>
-      <footer>
+    <footer>
         <p>&copy; 2025 LaPietro</p>
         <p>Fondator:Di Pietro Luca</p>
     </footer>

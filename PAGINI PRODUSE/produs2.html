@@ -136,13 +136,13 @@
             border-radius: 5px;
             padding: 5px;
         }
-        .buton
-        {
+
+        .buton {
             padding: 5px 10px;
             border: none;
             background-color: #2A4D69;
             color: white;
-            cursor: pointer; 
+            cursor: pointer;
         }
 
         .adauga-in-cos {
@@ -160,6 +160,7 @@
         .adauga-in-cos:hover {
             background: #2A4D69;
         }
+
         footer {
             background-color: #2A4D69;
             color: whitesmoke;
@@ -167,7 +168,7 @@
             padding: 15px;
             font-size: 20px;
             margin-top: 10px;
-        }   
+        }
     </style>
 </head>
 
@@ -225,7 +226,8 @@
                 <input type="number" id="cantitate" value="1" min="1">
                 <button onclick="cresteCantitate()">+</button>
             </div>
-            <button class="buton" onclick="addToCartWithQuantity('produs2', 'Pizza Guseppe Hawaii Dr. Oetker cu sunca si ananas', 20)">Cumpără</button>
+            <button class="buton"
+                onclick="addToCartWithQuantity('produs2', 'Pizza Guseppe Hawaii Dr. Oetker cu sunca si ananas', 20)">Cumpără</button>
         </div>
     </div>
     <script src="/java.js"></script>
@@ -240,10 +242,10 @@
             if (cantitate.value > 1) {
                 cantitate.value = parseInt(cantitate.value) - 1;
             }
-            
+
         }
     </script>
-      <footer>
+    <footer>
         <p>&copy; 2025 LaPietro</p>
         <p>Fondator:Di Pietro Luca</p>
     </footer>
